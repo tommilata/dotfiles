@@ -1,0 +1,1 @@
+/Users/tomas/.dotfiles/config/fish//config.fish

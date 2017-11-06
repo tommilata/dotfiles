@@ -1,0 +1,1 @@
+/Users/tomas/.dotfiles/config/fish//functions/fish_greeting.fish
