@@ -1,1 +1,0 @@
-/Users/tomas/.dotfiles/config/fish//conf.d/omf.fish
