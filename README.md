@@ -1,2 +1,2 @@
 # dotfiles
-Managed using [rcm](https://thoughtbot.github.io/rcm/).
+My config files managed using [rcm](https://thoughtbot.github.io/rcm/).
