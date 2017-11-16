@@ -1,0 +1,43 @@
+{
+  // Place your settings in this file to overwrite the default settings
+  "workbench.iconTheme": "vs-seti",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "workbench.colorTheme": "Atom One Dark",
+  "terminal.external.osxExec": "iTerm.app",
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist/**": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/bower_components": true,
+    "**/dist/**": true
+  },
+  "editor.fontSize": 12,
+  "editor.lineHeight": 16,
+  "editor.minimap.enabled": false,  
+  "editor.tabSize": 2,  
+  "eslint.autoFixOnSave": true,
+  "files.autoSave": "off", 
+  "flow.useNPMPackagedFlow": true,
+  "gitlens.blame.line.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "workbench.statusBar.visible": true,
+  "workbench.panel.location": "bottom",
+  "javascript.validate.enable": false  
+}
