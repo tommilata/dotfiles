@@ -2,6 +2,9 @@ set -x PATH $PATH ~/bin
 
 set -x PATH "$HOME/miniconda3/bin" $PATH
 set -U fish_user_paths $HOME/miniconda3/bin $fish_user_paths
-source (conda info --root)/etc/fish/conf.d/conda.fish
+
+# more robust would be to prefix with  /(conda info --root)
+# but it's quite slow
+source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
 
