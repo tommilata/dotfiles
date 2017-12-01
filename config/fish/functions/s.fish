@@ -1,6 +1,3 @@
 function s
-        cd ~/src/bitbucket.org/theasi/ 
-	ls | fzy | read dir
-	echo $dir
-	cd $dir
+	find ~/src -type d -maxdepth 4 -not -path '*/\.*' | fzy | read dir; and cd $dir
 end
