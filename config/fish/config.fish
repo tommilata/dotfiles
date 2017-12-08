@@ -8,3 +8,5 @@ set -U fish_user_paths $HOME/miniconda3/bin $fish_user_paths
 source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
 
+# SourceTree
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
