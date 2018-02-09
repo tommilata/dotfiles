@@ -39,5 +39,11 @@
   "gitlens.codeLens.authors.enabled": false,
   "workbench.statusBar.visible": true,
   "workbench.panel.location": "bottom",
-  "javascript.validate.enable": false  
+  "javascript.validate.enable": false,
+  "editor.renderWhitespace": "all",
+  "git.autofetch": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 0,
+  "extensions.ignoreRecommendations": false
 }
