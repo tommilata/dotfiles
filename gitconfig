@@ -20,8 +20,6 @@
   trustExitCode = true
 [difftool "intellij"]
 	cmd = /usr/local/bin/idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
-[commit]
-	template = /Users/tomas/.stCommitMsg
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
