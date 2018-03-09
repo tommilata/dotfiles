@@ -45,5 +45,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "git.enableSmartCommit": true,
   "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "gitlens.keymap": "alternate"
 }
