@@ -1,3 +1,6 @@
+# golang
+set -x GOPATH ~
+
 # do not display the welcome message
 set -e fish_greeting
 
