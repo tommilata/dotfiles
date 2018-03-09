@@ -1,5 +1,6 @@
 # golang
-set -x GOPATH ~
+set -x -U GOPATH $HOME/go
+set -x -U GOBIN $GOPATH/bin
 
 # do not display the welcome message
 set -e fish_greeting
