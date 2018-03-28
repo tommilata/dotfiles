@@ -14,6 +14,8 @@ set -U fish_user_paths $HOME/miniconda3/bin $fish_user_paths
 # but it's quite slow
 source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
+# bobthefish
+set -g theme_display_k8s_context no
 
 # SourceTree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
