@@ -28,3 +28,6 @@
 	process = git-lfs filter-process
 [help]
 	autocorrect = 5
+[alias]
+	l = "!source ~/.config/git/githelpers && pretty_git_log"
+	la = !git l --all
