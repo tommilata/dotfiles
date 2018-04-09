@@ -1,6 +1,9 @@
 # IntelliJ
 .idea
 
+# jenv
+.java-version
+
 # VSCode
 .vscode
 
