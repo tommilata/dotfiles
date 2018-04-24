@@ -1,5 +1,5 @@
 # golang
-set -x -U GOPATH $HOME/go
+set -x -U GOPATH $HOME
 set -x -U GOBIN $GOPATH/bin
 
 # do not display the welcome message
