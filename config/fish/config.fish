@@ -1,3 +1,6 @@
+# cargo
+set -x PATH "$HOME/.cargo/bin" $PATH
+
 # golang
 set -x -U GOPATH $HOME
 set -x -U GOBIN $GOPATH/bin
