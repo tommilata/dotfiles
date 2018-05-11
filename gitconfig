@@ -29,5 +29,6 @@
 [help]
 	autocorrect = 5
 [alias]
+        home = !"git checkout master && git pull && git branch --merged | grep -v master | xargs git branch -d"
 	l = "!source ~/.config/git/githelpers && pretty_git_log"
 	la = !git l --all
