@@ -19,6 +19,9 @@ source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
 # bobthefish
 set -g theme_display_k8s_context no
+set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # SourceTree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
