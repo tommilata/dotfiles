@@ -1,5 +1,5 @@
 # cargo
-set -x PATH "$HOME/.cargo/bin" $PATH
+[ -d "$HOME/.cargo/bin" ]; and set -x PATH "$HOME/.cargo/bin" $PATH
 
 # golang
 set -x -U GOPATH $HOME
@@ -23,5 +23,6 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # SourceTree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
-set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
+
+
 set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
