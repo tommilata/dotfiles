@@ -46,5 +46,9 @@
   "git.enableSmartCommit": true,
   "window.zoomLevel": 0,
   "extensions.ignoreRecommendations": false,
-  "gitlens.keymap": "alternate"
+  "gitlens.keymap": "chorded",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  }
 }
