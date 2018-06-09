@@ -26,3 +26,6 @@ alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 
 set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
+
+# appengine
+set -x PATH $PATH ~/appengine-java-sdk/bin
