@@ -31,3 +31,6 @@ set -g fish_user_paths "/usr/local/opt/postgresql@9.5/bin" $fish_user_paths
 if [ -d ~/appengine-java-sdk/bin ]
 	set -x PATH $PATH ~/appengine-java-sdk/bin
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/tomas/google-cloud-sdk/path.fish.inc'; else; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end; end
