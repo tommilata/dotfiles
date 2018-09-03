@@ -10,4 +10,5 @@
 # MacOS
 .DS_Store
 
-
+# pytest 
+.cache/
