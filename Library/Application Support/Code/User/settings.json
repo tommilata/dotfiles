@@ -50,5 +50,6 @@
   "gitlens.historyExplorer.enabled": true,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
-  }
+  },
+  "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline"
 }
