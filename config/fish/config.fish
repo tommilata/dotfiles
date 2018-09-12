@@ -34,3 +34,9 @@ end
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/tomas/google-cloud-sdk/path.fish.inc'; else; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end; end
+
+
+
+alias preview="fzf --preview 'bat {}'"
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
