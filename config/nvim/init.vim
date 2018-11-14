@@ -4,9 +4,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'dag/vim-fish'
 Plug 'dikiaap/minimalist'
-Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 syntax enable 
