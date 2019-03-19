@@ -7,6 +7,10 @@
 # VSCode
 .vscode
 
+## VSCode metals scala extension
+.metals
+.bloop
+
 # MacOS
 .DS_Store
 
