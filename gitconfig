@@ -2,6 +2,8 @@
 	path = ~/.config/git/gitconfig_user_personal
 [includeIf "gitdir:**/bitbucket.org/theasi/**"]
 	path = ~/.config/git/gitconfig_user_work
+[includeIf "gitdir:**/github.com/facultyai/**"]
+	path = ~/.config/git/gitconfig_user_work
 [core]
 	excludesfile = /Users/tomas/.gitignore_global
 	autocrlf = input
