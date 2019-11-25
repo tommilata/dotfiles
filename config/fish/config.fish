@@ -18,6 +18,7 @@ source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
 # bobthefish
 set -g theme_display_k8s_context no
+set -g theme_powerline_fonts no
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # SourceTree
