@@ -36,7 +36,9 @@ set -x PATH "/usr/local/opt/postgresql@9.5/bin" $PATH
 #if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/tomas/google-cloud-sdk/path.fish.inc'; else; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end; end
 
 
-alias copy-git-describe='echo -n (git describe) | pbcopy'
+alias copy-git-describe='echo -n (git describe --dirty=-SNAPSHOT) | pbcopy'
+alias copy-git-branch='echo -n (git symbolic-ref --short HEAD) | pbcopy'
+
 alias preview="fzf --preview 'bat {}'"
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
