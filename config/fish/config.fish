@@ -48,3 +48,11 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 set -x PATH /Users/tomas/.local/bin $PATH
 
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+# pipx
+register-python-argcomplete --shell fish pipx | .
+
