@@ -2,7 +2,7 @@
 #[ -d "$HOME/.cargo/bin" ]; and set -x PATH "$HOME/.cargo/bin" $PATH
 
 # golang
-set -x GOPATH $HOME
+set -x GOPATH $HOME/go
 set -x GOBIN $GOPATH/bin
 
 # do not display the welcome message
