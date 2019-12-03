@@ -5,7 +5,7 @@
 [includeIf "gitdir:**/github.com/facultyai/**"]
 	path = ~/.config/git/gitconfig_user_work
 [core]
-	excludesfile = /Users/tomas/.gitignore_global
+	excludesfile = /Users/tomas/.config/git/ignore_global
 	autocrlf = input
 	editor = nvim
 [merge]
