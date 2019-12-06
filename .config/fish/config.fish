@@ -59,5 +59,5 @@ if type exa >/dev/null;
   alias lT='exa -T --git-ignore --level=4 --group-directories-first'
 end
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
