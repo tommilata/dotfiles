@@ -58,3 +58,6 @@ if type exa >/dev/null;
   alias llt='exa -lT --git-ignore --level=2 --group-directories-first'
   alias lT='exa -T --git-ignore --level=4 --group-directories-first'
 end
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
