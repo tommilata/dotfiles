@@ -1,55 +1,55 @@
 {
-  // Place your settings in this file to overwrite the default settings
-  "workbench.iconTheme": "vs-seti",
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "workbench.colorTheme": "Atom One Dark",
-  "terminal.external.osxExec": "iTerm.app",
-
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/dist/**": true
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/dist/**": true
-  },
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/**": true,
-    "**/bower_components": true,
-    "**/dist/**": true
-  },
-  "editor.fontSize": 12,
-  "editor.lineHeight": 16,
-  "editor.minimap.enabled": false,  
-  "editor.tabSize": 2,  
-  "eslint.autoFixOnSave": true,
-  "files.autoSave": "off", 
-  "flow.useNPMPackagedFlow": true,
-  "gitlens.blame.line.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "workbench.statusBar.visible": true,
-  "workbench.panel.location": "bottom",
-  "javascript.validate.enable": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
-  "git.autofetch": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "git.enableSmartCommit": true,
-  "window.zoomLevel": 0,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
   "extensions.ignoreRecommendations": false,
-  "gitlens.keymap": "chorded",
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
-  "terminal.integrated.fontFamily": "Meslo LG S DZ for Powerline"
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "gitlens.codeLens.enabled": false,
+  "go.useLanguageServer": true,
+  "metals.javaHome": "/Users/tomas/.sdkman/candidates/java/current",
+  "python.formatting.blackPath": "/Users/tomas/.local/bin/black",
+  "python.formatting.provider": "black",
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.scrollback": 9999,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.colorCustomizations": {
+    "terminal.background": "#181818",
+    "terminal.foreground": "#ABB2BF",
+    "terminalCursor.background": "#ABB2BF",
+    "terminalCursor.foreground": "#ABB2BF",
+    "terminal.ansiBlack": "#282C34",
+    "terminal.ansiBlue": "#61AFEF",
+    "terminal.ansiBrightBlack": "#545862",
+    "terminal.ansiBrightBlue": "#61AFEF",
+    "terminal.ansiBrightCyan": "#56B6C2",
+    "terminal.ansiBrightGreen": "#98C379",
+    "terminal.ansiBrightMagenta": "#C678DD",
+    "terminal.ansiBrightRed": "#E06C75",
+    "terminal.ansiBrightWhite": "#C8CCD4",
+    "terminal.ansiBrightYellow": "#E5C07B",
+    "terminal.ansiCyan": "#56B6C2",
+    "terminal.ansiGreen": "#98C379",
+    "terminal.ansiMagenta": "#C678DD",
+    "terminal.ansiRed": "#E06C75",
+    "terminal.ansiWhite": "#ABB2BF",
+    "terminal.ansiYellow": "#E5C07B"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
 }
