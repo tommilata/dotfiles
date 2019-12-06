@@ -1,2 +1,3 @@
 # dotfiles
-My config files managed using [rcm](https://thoughtbot.github.io/rcm/).
+My dot files. I manage them using a [bare git repository](https://www.atlassian.com/git/tutorials/dotfiles).
+
