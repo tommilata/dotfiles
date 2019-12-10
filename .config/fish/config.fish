@@ -61,3 +61,4 @@ end
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+set -g fish_user_paths "/usr/local/opt/helm@2/bin" $fish_user_paths
