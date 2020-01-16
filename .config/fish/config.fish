@@ -16,20 +16,8 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # PATH
 set -x PATH $PATH ~/bin
-set -x PATH "$HOME/miniconda3/bin" $PATH
+#set -x PATH "$HOME/miniconda3/bin" $PATH
 set -x PATH "/usr/local/opt/postgresql@9.5/bin" $PATH
-
-# pipx
-register-python-argcomplete --shell fish pipx | .
-# pyenv-virtualenv
-status --is-interactive; and pyenv init - | source
-status --is-interactive; and pyenv virtualenv-init - | source
-# added by pipsi (https://github.com/mitsuhiko/pipsi)
-set -x PATH /Users/tomas/.local/bin $PATH
-# conda
-# more robust would be to prefix with  /(conda info --root)
-# but it's quite slow
-source /Users/tomas/miniconda3/etc/fish/conf.d/conda.fish
 
 # SourceTree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
@@ -62,3 +50,10 @@ end
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 set -g fish_user_paths "/usr/local/opt/helm@2/bin" $fish_user_paths
+
+# pyenv-virtualenv
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
+# added by pipsi (https://github.com/mitsuhiko/pipsi)
+set -x PATH /Users/tomas/.local/bin $PATH
+
