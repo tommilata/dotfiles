@@ -8,6 +8,7 @@
 .vscode
 
 ## VSCode metals scala extension
+metals.sbt
 .metals
 .bloop
 
