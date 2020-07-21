@@ -16,8 +16,12 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # PATH
 set -x PATH $PATH ~/bin
-#set -x PATH "$HOME/miniconda3/bin" $PATH
+set -x PATH ~/.miniconda/bin $PATH
+#conda init fish
 set -x PATH "/usr/local/opt/postgresql@9.5/bin" $PATH
+set -x PATH "/Users/tomas/.gem/ruby/2.6.0/bin" $PATH
+
+set -x PATH $PATH "/Users/tomas/Library/Application Support/Coursier/bin"
 
 # SourceTree
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
@@ -52,8 +56,17 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 set -g fish_user_paths "/usr/local/opt/helm@2/bin" $fish_user_paths
 
 # pyenv-virtualenv
-status --is-interactive; and pyenv init - | source
-status --is-interactive; and pyenv virtualenv-init - | source
+#status --is-interactive; and pyenv init - | source
+#status --is-interactive; and pyenv virtualenv-init - | source
 # added by pipsi (https://github.com/mitsuhiko/pipsi)
 set -x PATH /Users/tomas/.local/bin $PATH
+
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /Users/tomas/.miniconda/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
 
