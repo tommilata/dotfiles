@@ -1,3 +1,0 @@
-#!/bin/bash
-export PATH=$PATH:/usr/local/bin
-/Users/tomas/.local/bin/bugwarrior-pull >> /var/log/bugwarrior.log 2>&1
