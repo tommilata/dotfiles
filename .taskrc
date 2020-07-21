@@ -11,7 +11,7 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=~\/Dropbox (Personal)\/.task
+data.location=~\/Dropbox\/.task
 
 # Color theme (uncomment one to use)
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/light-16.theme
@@ -30,13 +30,14 @@ data.location=~\/Dropbox (Personal)\/.task
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
 
 editor=nvim
-context.work=-personal
-context.personal=+personal
-context.chore=+personal -fun
+context.work=proj:work
+context.life=project.not:work
 uda.priority.label=Priority
 uda.priority.type=string
 uda.priority.values=H,M,,L
 urgency.uda.priority..coefficient=1.8
 urgency.uda.priority.L.coefficient=0
-urgency.user.project.backend-improvements.coefficient=-1.5
-urgency.user.project.techdebt.coefficient=-2
+urgency.user.project.work.backend-improvements.coefficient=-1.5
+urgency.user.project.work.techdebt.coefficient=-2
+urgency.user.project.work.learning-time.coefficient=-2
+context=life
