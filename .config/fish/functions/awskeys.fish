@@ -1,11 +1,21 @@
 function awskeys
-	set -l account "$argv"
+
+	switch $argv
+		case --clear
+			set -e AWS_PROFILE
+			set -e AWS_ACCESS_KEY_ID
+			set -e AWS_SECRET_ACCESS_KEY
+		case '*'
+			set -l profile "$argv"
 	
-	for cmd in (cat ~/.aws/credentials | grep "\[$account\]" -A 2 | sed -e 's/aws_access_key_id/AWS_ACCESS_KEY_ID/' -e 's/aws_secret_access_key/AWS_SECRET_ACCESS_KEY/' | grep AWS_ | awk '{ print "set -gx " $1 " " $3 }'); eval $cmd; end
-
-#	echo 'Current AWS_ variables from `env`:'
-#	env | grep AWS_
-
-	aws sts get-caller-identity
-	aws iam list-account-aliases
+			if not set -q OP_SESSION_my
+				eval (op signin)
+			end
+		
+			set -l aws_fields (op get item "AWS $profile" --fields AWS_PROFILE --fields AWS_ACCESS_KEY_ID --fields AWS_SECRET_ACCESS_KEY)
+			
+			set -gx AWS_PROFILE (echo $aws_fields | jq -r .AWS_PROFILE)
+			set -gx AWS_ACCESS_KEY_ID (echo $aws_fields | jq -r .AWS_ACCESS_KEY_ID)
+			set -gx AWS_SECRET_ACCESS_KEY (echo $aws_fields | jq -r .AWS_SECRET_ACCESS_KEY)
+	end
 end
