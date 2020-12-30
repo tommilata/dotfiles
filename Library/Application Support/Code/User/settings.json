@@ -17,12 +17,10 @@
   "gitlens.codeLens.enabled": false,
   "go.useLanguageServer": true,
   "metals.javaHome": "/Users/tomas/.sdkman/candidates/java/current",
-  "python.formatting.blackPath": "/Users/tomas/.local/bin/black",
   "python.formatting.provider": "black",
   "terminal.integrated.inheritEnv": true,
   "terminal.integrated.scrollback": 9999,
   "window.title": "${activeEditorLong}${separator}${rootName}",
-  "workbench.colorTheme": "Atom One Dark",
   "workbench.colorCustomizations": {
     "terminal.background": "#181818",
     "terminal.foreground": "#ABB2BF",
@@ -45,20 +43,11 @@
     "terminal.ansiWhite": "#ABB2BF",
     "terminal.ansiYellow": "#E5C07B"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[yaml]": {
     "editor.formatOnSave": false
   },
   "python.terminal.activateEnvironment": false,
   "window.zoomLevel": 0,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.rulers": [80, 100, 120],
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -66,12 +55,25 @@
   "java.semanticHighlighting.enabled": true,
   "java.requirements.JDK11Warning": false,
   "editor.fontFamily": "Jetbrains Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.formatOnSave": true,
   "search.exclude": {
     ".bloop": true,
     ".metals": true,
     "**/metals.sbt": true
   },
   "python.languageServer": "Microsoft",
-  "editor.cursorStyle": "block"
+  "editor.cursorStyle": "block",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "python.showStartPage": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "editor.formatOnSave": true,
+  "python.formatting.blackPath": "/Users/tomas/.miniconda/bin/black",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Darcula Theme from IntelliJ",
+  
 }
