@@ -19,6 +19,7 @@ set -x PATH $PATH ~/bin
 set -x PATH ~/.miniconda/bin $PATH
 #conda init fish
 set -x PATH "/usr/local/opt/postgresql@9.5/bin" $PATH
+#set -x PATH "/usr/local/opt/postgresql@11/bin" $PATH
 set -x PATH "/Users/tomas/.gem/ruby/2.6.0/bin" $PATH
 
 set -x PATH $PATH "/Users/tomas/Library/Application Support/Coursier/bin"
