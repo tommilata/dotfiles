@@ -71,3 +71,5 @@ test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shel
 eval /Users/tomas/.miniconda/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
+# rbenv
+status --is-interactive; and source (rbenv init -|psub)
