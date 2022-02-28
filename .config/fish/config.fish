@@ -32,7 +32,9 @@ alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 #	set -x PATH $PATH ~/appengine-java-sdk/bin
 #end
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end
+if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]
+    . '/Users/tomas/google-cloud-sdk/path.fish.inc'
+end
 
 # git
 alias copydescribe='echo -n (git describe --dirty=-SNAPSHOT) | pbcopy'
@@ -43,12 +45,12 @@ alias preview="fzf --preview 'bat {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
 # exa
-if type exa >/dev/null;
-  alias l='exa -l --group-directories-first --git'
-  alias ll='exa -l --all --all --group-directories-first --git'
-  alias lt='exa -T --git-ignore --level=2 --group-directories-first'
-  alias llt='exa -lT --git-ignore --level=2 --group-directories-first'
-  alias lT='exa -T --git-ignore --level=4 --group-directories-first'
+if type exa >/dev/null
+    alias l='exa -l --group-directories-first --git'
+    alias ll='exa -l --all --all --group-directories-first --git'
+    alias lt='exa -T --git-ignore --level=2 --group-directories-first'
+    alias llt='exa -lT --git-ignore --level=2 --group-directories-first'
+    alias lT='exa -T --git-ignore --level=4 --group-directories-first'
 end
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -61,15 +63,15 @@ pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source
 
 
-set -x PATH $PATH /Users/tomas/.local/bin 
+set -x PATH $PATH /Users/tomas/.local/bin
 
 
-test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /Users/tomas/.miniconda/bin/conda "shell.fish" "hook" $argv | source
+#eval /Users/tomas/.miniconda/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
 # rbenv
