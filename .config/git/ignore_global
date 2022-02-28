@@ -11,9 +11,13 @@
 metals.sbt
 .metals
 .bloop
+.bsp
 
 # MacOS
 .DS_Store
+
+# python
+__pycache__
 
 # pytest 
 .cache/

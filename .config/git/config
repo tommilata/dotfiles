@@ -4,6 +4,8 @@
 	path = ~/.config/git/gitconfig_user_work
 [includeIf "gitdir:**/github.com/facultyai/**"]
 	path = ~/.config/git/gitconfig_user_work
+[includeIf "gitdir:**/gitlab.com/facultyai/**"]
+	path = ~/.config/git/gitconfig_user_work
 [core]
 	excludesfile = /Users/tomas/.config/git/ignore_global
 	autocrlf = input
@@ -36,3 +38,9 @@
 	la = !git l --all
 [http]
 	cookiefile = /Users/tomas/.gitcookies
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
