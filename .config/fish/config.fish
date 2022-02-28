@@ -33,11 +33,10 @@ alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 #end
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/tomas/google-cloud-sdk/path.fish.inc' ]; . '/Users/tomas/google-cloud-sdk/path.fish.inc'; end
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 # git
-alias copy-git-describe='echo -n (git describe --dirty=-SNAPSHOT) | pbcopy'
-alias copy-git-branch='echo -n (git symbolic-ref --short HEAD) | pbcopy'
+alias copydescribe='echo -n (git describe --dirty=-SNAPSHOT) | pbcopy'
+alias copybranch='echo -n (git symbolic-ref --short HEAD) | pbcopy'
 
 alias preview="fzf --preview 'bat {}'"
 # add support for ctrl+o to open selected file in VS Code
