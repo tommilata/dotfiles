@@ -16,7 +16,7 @@ set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # PATH
 set -x PATH $PATH ~/bin
-set -x PATH ~/.miniconda/bin $PATH
+#set -x PATH ~/.miniconda/bin $PATH
 #conda init fish
 set -x PATH "/usr/local/opt/postgresql@9.5/bin" $PATH
 #set -x PATH "/usr/local/opt/postgresql@11/bin" $PATH
@@ -54,13 +54,15 @@ end
 
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-set -g fish_user_paths "/usr/local/opt/helm@2/bin" $fish_user_paths
+# pyenv
+status is-interactive; and pyenv init --path | source
+pyenv init - | source
 
 # pyenv-virtualenv
-#status --is-interactive; and pyenv init - | source
-#status --is-interactive; and pyenv virtualenv-init - | source
-# added by pipsi (https://github.com/mitsuhiko/pipsi)
-set -x PATH /Users/tomas/.local/bin $PATH
+status --is-interactive; and pyenv virtualenv-init - | source
+
+
+set -x PATH $PATH /Users/tomas/.local/bin 
 
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
